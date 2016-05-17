@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppliRSS</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="test_image_title">title</string>
+    <string name="test_image_date">date</string>
+    <string name="description_image">description</string>
+    <string name="test_image_description">description image</string>
+</resources>

@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ff2418"
+        android:text="Premier"
+        android:background="#020202"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClickPremier"
+        android:id="@+id/button" />
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Dernier"
+        android:background="#fc050505"
+        android:textColor="#ff2226"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickDernier"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:tag="MyScrollView"
+        tools:context=".MainActivity"
+        android:layout_below="@+id/button">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:tag="MyLinearLayout"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Précédent"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="onClickPrecedent"/>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Suivant"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClickSuivant"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/imageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:tag="MyImageTitle"
+                android:text="@string/test_image_title"/>
+
+            <TextView
+                android:id="@+id/imageDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:tag="MyImageDate"
+                android:text="@string/test_image_date"/>
+
+            <ImageView
+                android:id="@+id/imageDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/description_image"
+                android:adjustViewBounds="true"
+                android:tag="MyImageDisplay" />
+
+            <TextView
+                android:id="@+id/imageDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:tag="MyImageDescription"
+                android:text="@string/test_image_description"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Précédent"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="onClickPrecedent"/>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Suivant"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClickSuivant"/>
+
+            </RelativeLayout>
+
+        </LinearLayout >
+
+    </ScrollView>
+
+</RelativeLayout>
